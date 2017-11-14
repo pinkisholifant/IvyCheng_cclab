@@ -1,10 +1,10 @@
 #include "ofApp.h"
 #include "portrait.h"
-#include "portrait.cpp"
+//#include "portrait.cpp"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+ofEnableSmoothing();
 }
 
 //--------------------------------------------------------------
@@ -28,6 +28,7 @@ void ofApp::draw(){
 
     ofSetColor(238,189,160);
     ofDrawEllipse(500,350,300,400);
+    ofEnableSmoothing();
     ofSetColor(44,20,4);
     ofDrawLine(500, 150, 500, 300);
     ofDrawLine(510, 152, 510, 300);
@@ -61,7 +62,8 @@ void ofApp::draw(){
     portrait.draw();
     ofSetColor(202,243,255);
     ofDrawEllipse(500,700,500,300);
-    
+    ofEnableSmoothing();
+    //ofCurveVertex();
     
 }
 
