@@ -24,5 +24,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     Portrait portrait;
+    ofImage img;
+
 		
 };

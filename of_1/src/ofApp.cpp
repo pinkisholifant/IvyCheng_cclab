@@ -5,6 +5,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 ofEnableSmoothing();
+    img.load("image.jpg");
+    //img.resize( 1024, 1024);
 }
 
 //--------------------------------------------------------------
@@ -21,7 +23,10 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackground(248,215,223);
+    
+    img.draw(0,0);
+    ofSetColor(ofRandom(100,255));
+    //ofBackground(248,215,223);
     ofFill();
     ofSetColor(70,32,10);
     ofDrawRectangle(350,350,300,320);
