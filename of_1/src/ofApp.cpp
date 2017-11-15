@@ -28,6 +28,7 @@ void ofApp::draw(){
 
     ofSetColor(238,189,160);
     ofDrawEllipse(500,350,300,400);
+    ofSetCircleResolution(100);
     ofEnableSmoothing();
     ofSetColor(44,20,4);
     ofDrawLine(500, 150, 500, 300);
